@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity">
+
+    <TextView
+        android:id="@+id/total_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Total income: 42000"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#16E428"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="47dp" />
+    <TextView
+        android:id="@+id/total_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Total expense: 42000"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="47dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="3"
+        tools:listitem="@layout/list_item"
+        tools:visibility="gone" />
+
+</LinearLayout>

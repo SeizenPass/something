@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expense">
+
+    <TextView
+        android:id="@+id/expense"
+        android:layout_width="360dp"
+        android:layout_height="128dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Expense"
+        android:textAlignment="center"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/expense_date1"-->
+    <!--        android:layout_width="256dp"-->
+    <!--        android:layout_height="96dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:fontFamily="@font/comfortaa_bold"-->
+    <!--        android:text="Date:"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="22sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.496"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/expense"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <Button
+        android:id="@+id/pickdate1"
+        android:layout_width="256dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedbutton"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Pick Date"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expense"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <EditText
+        android:id="@+id/expence_w"
+        android:layout_width="256dp"
+        android:layout_height="96dp"
+        android:ems="10"
+        android:fontFamily="@font/comfortaa_bold"
+        android:hint="Amount:"
+        android:inputType="number"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickdate1"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <Button
+        android:id="@+id/but_ex"
+        android:layout_width="256dp"
+        android:layout_height="96dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Add expense"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expence_w"
+        app:layout_constraintVertical_bias="0.860" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toTopOf="@+id/but_ex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expence_w"
+        app:layout_constraintVertical_bias="0.32">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

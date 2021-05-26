@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="119dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="activity_income"
+        android:text="@string/income"
+        android:textSize="14sp"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        tools:ignore="NotSibling,OnClick" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="119dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Expense"
+        android:textSize="14sp"
+        app:backgroundTint="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <Button
+        android:id="@+id/button_history"
+        android:layout_width="119dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="History"
+        android:textSize="14sp"
+        app:backgroundTint="#CEBA9921"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="119dp"
+        android:layout_height="99dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Logout"
+        android:textSize="14sp"
+        app:backgroundTint="#CE4867A5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/home_heading"
+        android:layout_width="360dp"
+        android:layout_height="128dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Home"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="44sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomnavbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
