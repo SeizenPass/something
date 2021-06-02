@@ -6,68 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_plus"
-        android:layout_width="119dp"
-        android:layout_height="99dp"
-        android:background="@drawable/roundedbutton"
-        android:fontFamily="@font/comfortaa_bold"
-        android:onClick="activity_income"
-        android:text="@string/income"
-        android:textSize="14sp"
-        app:backgroundTint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.903"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32"
-        tools:ignore="NotSibling,OnClick" />
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home_heading"
+        >
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button_plus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="99dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/comfortaa_bold"
+            android:onClick="activity_income"
+            android:text="@string/income"
+            android:textSize="14sp"
+            app:backgroundTint="#4CAF50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.903"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32"
+            tools:ignore="NotSibling,OnClick" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button_minus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="99dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Expense"
+            android:textSize="14sp"
+            app:backgroundTint="#FF0000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lin1">
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/button_history"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="99dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="History"
+            android:textSize="14sp"
+            app:backgroundTint="#CEBA9921"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button_minus"
-        android:layout_width="119dp"
-        android:layout_height="99dp"
-        android:background="@drawable/roundedbutton"
-        android:fontFamily="@font/comfortaa_bold"
-        android:text="Expense"
-        android:textSize="14sp"
-        app:backgroundTint="#FF0000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
-
-    <Button
-        android:id="@+id/button_history"
-        android:layout_width="119dp"
-        android:layout_height="99dp"
-        android:background="@drawable/roundedbutton"
-        android:fontFamily="@font/comfortaa_bold"
-        android:text="History"
-        android:textSize="14sp"
-        app:backgroundTint="#CEBA9921"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomnavbar"
         android:id="@+id/button_logout"
-        android:layout_width="119dp"
+        android:layout_width="match_parent"
         android:layout_height="99dp"
         android:background="@drawable/roundedbutton"
         android:fontFamily="@font/comfortaa_bold"
         android:text="Logout"
         android:textSize="14sp"
         app:backgroundTint="#CE4867A5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

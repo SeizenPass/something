@@ -8,6 +8,18 @@
     android:orientation="vertical"
     tools:context=".AuthActivity">
 
+    <TextView
+        android:id="@+id/home_heading2"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Log In"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="44sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="wrap_content"
@@ -31,11 +43,13 @@
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#CEBA9921"
         android:text="@string/login"/>
 
     <Button
         android:id="@+id/toRegisterButton"
         android:layout_margin="10dp"
+        android:backgroundTint="#CEBA9921"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/register"/>
